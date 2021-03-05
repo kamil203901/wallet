@@ -19,7 +19,7 @@
 
 <body>
     <main>
-    <form action="afterClick" th:action="@{/categories}" th:object="${categoriesDTO}" method="post">
+    <form action="afterClick" th:action="@{/http://localhost:8080/newCategory}" th:object="${categoriesDTO}" method="post">
 
     <div class="categories">Kategoria 1
     <input type="text" name="costOfCategory1" th:field="*{category1}"></div>
