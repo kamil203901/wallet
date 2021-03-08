@@ -6,18 +6,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-@Builder
-@Table(name = "CATEGORIES")
-@ToString
 @Getter
-public class Category {
-
-    @Id
-    private String id;
-
-    private String name;
-
+@Setter
+public class UsersCategories {
+    private String category1;
+    private String category2;
+    private String category3;
+    private String category4;
+    private String category5;
 }
