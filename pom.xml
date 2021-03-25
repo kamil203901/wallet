@@ -14,7 +14,7 @@
 	<name>wallet</name>
 	<description>First project on Rajdowa Street</description>
 	<properties>
-		<java.version>15</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

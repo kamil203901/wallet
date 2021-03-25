@@ -1,0 +1,175 @@
+body {
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image: url("stardust.png");
+  font-size: 20px;
+}
+
+#containter_registration {
+  font-size: 15px;
+  background-color: #cec497;
+  width: 300px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  -webkit-box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  -moz-box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  border-radius: 15px;
+}
+
+.registration_inputs > input[type="text"],
+.registration_inputs > input[type="password"],
+.registration_inputs > input[type="email"] {
+  margin-top: 2px;
+}
+
+#container_login {
+  background-color: #cec497;
+  width: 300px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  -webkit-box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  -moz-box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  border-radius: 15px;
+}
+
+#login_submits {
+  margin-left: 25px;
+}
+
+#forgot_password {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+hr {
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.555);
+}
+
+a:link {
+  text-decoration: none;
+  color: rgba(102, 102, 102, 0.993);
+}
+
+a:hover {
+  color: rgb(63, 62, 62);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 300px;
+  background-color: #e9e0d2;
+  color: #666;
+  border: 2px solid rgb(209, 209, 208);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  width: 250px;
+  background-color: #d3a938;
+  font-size: 15px;
+  color: rgba(37, 33, 25, 0.705);
+  padding: 15px 10px;
+  border-radius: 5px;
+  border-color: rgba(139, 74, 27, 0.123);
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #b38e29;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
+  box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.9);
+  border: 2px solid #b38e29;
+  background-color: #f3f1e9;
+  color: #b38e29;
+}
+
+input[type="submit"]:focus {
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(204, 204, 204, 0.9);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(204, 204, 204, 0.9);
+  box-shadow: 0px 0px 15px 5px rgba(204, 204, 204, 0.9);
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+input:focus::-webkit-input-placeholder {
+  color: #b38e29;
+}
+/* Firefox < 19 */
+input:-moz-placeholder {
+  color: #999;
+}
+input:focus:-moz-placeholder {
+  color: #b38e29;
+}
+/* Firefox > 19 */
+input::-moz-placeholder {
+  color: #999;
+}
+input:focus::-moz-placeholder {
+  color: #b38e29;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+  color: #999;
+}
+input:focus:-ms-input-placeholder {
+  color: #b38e29;
+}
+
+#container_categories {
+  background-color: #cec497;
+  width: 600px;
+  padding: 70px;
+  margin-left: 10%;
+  -webkit-box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  -moz-box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  border-radius: 15px;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li {
+  margin-bottom: 55px;
+}
+
+.categories {
+  width: 140px;
+  float: left;
+}
+
+#categories_inputs {
+  width: 350px;
+  float: left;
+}
+
+#cost_adding_submit {
+  margin-left: 140px;
+  margin-top: -50px;
+}

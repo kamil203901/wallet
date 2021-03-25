@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+	<meta charset="utf-8">
+	<title>Registration</title>
+	<meta name="description" content="Website to control your expenses">
+	<meta name="kaywords" content="wallet, expenses, control, money, cash, registration">
+	<meta name="author" content="Mistrzowski Manewr">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+
+	<!--<link rel="stylesheet" th:href="@{/css/style.css}">-->
+  <link rel="stylesheet" href="styl.css">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+
+	<script th:src="@{/js/jquery-3.5.1.min.js}"></script>
+    <script th:src="@{/js/script.js}"></script>
+	</head>
+
+	<body>
+
+    <div id="containter_registration">
+  <form>
+    
+    <div class="registration_inputs">Podaj login: 
+    <input type="text" placeholder="login" onfocus="this.placeholder=' ' " onblur="this.placeholder='login'">
+    Podaj E-mail:
+    <input type="email" placeholder="email" onfocus="this.placeholder=' ' " onblur="this.placeholder='email'">
+    </div>
+
+    <div class="registration_inputs">Podaj hasło:
+    <input type="password" placeholder="password" onfocus="this.placeholder=' ' " onblur="this.placeholder='password'">
+    Potwierdź hasło
+    <input type="password" placeholder="password" onfocus="this.placeholder=' ' " onblur="this.placeholder='password'">
+    </div>
+
+    <div id="login_submits">
+    <input type="submit" value="Zarejestruj się">
+    </div>
+    
+  </form>
+</div>
+
+</body>
+	
+</html>
