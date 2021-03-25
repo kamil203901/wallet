@@ -15,7 +15,7 @@ public class WebConfiguration {
     @Description("Thymeleaf template resolver serving HTML 5")
     public ClassLoaderTemplateResolver templateResolver() {
 
-        var templateResolver = new ClassLoaderTemplateResolver();
+        ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
 
         templateResolver.setPrefix("templates/");
         templateResolver.setCacheable(false);
@@ -30,7 +30,7 @@ public class WebConfiguration {
     @Description("Thymeleaf template engine with Spring integration")
     public SpringTemplateEngine templateEngine() {
 
-        var templateEngine = new SpringTemplateEngine();
+        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
 
         return templateEngine;
@@ -40,7 +40,7 @@ public class WebConfiguration {
     @Description("Thymeleaf view resolver")
     public ViewResolver viewResolver() {
 
-        var viewResolver = new ThymeleafViewResolver();
+        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
 
         viewResolver.setTemplateEngine(templateEngine());
         viewResolver.setCharacterEncoding("UTF-8");
