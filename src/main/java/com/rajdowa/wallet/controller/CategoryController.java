@@ -36,7 +36,7 @@ public class CategoryController {
         model.addAttribute("categoriesDTO", all);
 
         model.addAttribute("usersCategoriesInput", new UsersCategories());
-        return "index";
+        return "home";
     }
 
 }

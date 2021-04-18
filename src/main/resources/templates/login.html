@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html xmlns:th="http://www.thymleaf.org">
 
 	<head>
 	<meta charset="utf-8">
@@ -31,15 +31,16 @@
           <div id="login_submits">
           <input type="submit" value="Zaloguj się" id="userEnter">
           <div id="forgot_password"><a href="#">Nie pamiętasz hasła?</a></div>
+		  </div>
         </form>
 
         <hr>
 
-        <form action="http://127.0.0.1:5500/src/main/resources/templates/registration.html" th:action="@{/registration.html}" th:object="${userRegistration}" method="post"></form>
-          <a href="registration.html">
-          <input type="submit" value="Zarejestruj się">
-          </a>
-        </form>
+<!--        <form action="http://127.0.0.1:5500/src/main/resources/templates/registration.html" th:action="@{/registration.html}" th:object="${userRegistration}" method="post"></form>-->
+<!--          <a href="registration.html">-->
+<!--          <input type="submit" value="Zarejestruj się">-->
+<!--          </a>-->
+<!--        </form>-->
 	</div>
 
 	</body>
