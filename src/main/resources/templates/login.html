@@ -22,22 +22,25 @@
 	<body>
 
     	<div id="container_login">
-		<form>
-			
-			<input type="text" placeholder="login" onfocus="this.placeholder=' ' " onblur="this.placeholder='login'">
-			
-			<input type="password" placeholder="haslo" onfocus="this.placeholder=' ' " onblur="this.placeholder='haslo'">
-			
-			<div id="login_submits">
-			<input type="submit" value="Zaloguj się">
-			<div id="forgot_password"><a href="#">Nie pamiętasz hasła?</a></div>
-			<hr>
-			<input type="submit" value="Zarejestruj się">
-			</div>
-			
-		</form>
+        <form action="afterClick" th:action="@{/login}" th:object="${usersLogin}" method="post">
+          Login:
+          <input type="text" name="userName" th:field="*{userName}" placeholder="login" onfocus="this.placeholder=' ' " onblur="this.placeholder='login'">
+          Hasło:
+          <input type="password" name="userPassword" th:field="*{userPassword}" placeholder="haslo" onfocus="this.placeholder=' ' " onblur="this.placeholder='haslo'">
+          
+          <div id="login_submits">
+          <input type="submit" value="Zaloguj się" id="userEnter">
+          <div id="forgot_password"><a href="#">Nie pamiętasz hasła?</a></div>
+        </form>
+
+        <hr>
+
+        <form action="http://127.0.0.1:5500/src/main/resources/templates/registration.html" th:action="@{/registration.html}" th:object="${userRegistration}" method="post"></form>
+          <a href="registration.html">
+          <input type="submit" value="Zarejestruj się">
+          </a>
+        </form>
 	</div>
 
 	</body>
-	
 </html>

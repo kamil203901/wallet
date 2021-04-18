@@ -29,8 +29,8 @@
                     <li>Dom:</li>
                     <li>Mieszkanie:</li>
                     <li>Jedzenie:</li>
-                    <li>Narkotyki:</li>
-                    <li>Prostytutki:</li>
+                    <li>Inwestycje:</li>
+                    <li>Edukacja:</li>
                 </ul>
             </div>
 
@@ -45,14 +45,16 @@
             <div style="clear: both;"></div>
 
             <div class="submit" id="cost_adding_submit">
-              <input type="submit" value="dodaj" name="categories_adding"></div>
-            </form>
+              <input type="submit" value="dodaj" name="categories_adding">
+            </div>
+           
             <hr>
             <br><br>
             <div class="updating_categories">Dodaj kategorie
-                <input type="text" name="new_categories" placeholder="Podaj nową kategorię">
+                <input type="text" name="new_categories" placeholder="Podaj nową kategorię" th:field="*{new_category}">
                 <input type="submit" value="dodaj" name="categories_adding">
             </div>
+          </form>
     </div>
 
 </main>

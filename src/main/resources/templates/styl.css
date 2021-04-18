@@ -173,3 +173,23 @@ ul > li {
   margin-left: 140px;
   margin-top: -50px;
 }
+
+/* New category styles */
+
+#containter_new_category {
+  background-color: #cec497;
+  width: 300px;
+  padding: 70px;
+  margin-left: 10%;
+  -webkit-box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  -moz-box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  box-shadow: 3px 3px 30px 5px rgba(248, 152, 7, 0.664);
+  border-radius: 15px;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+}
+#add_new_category {
+  font-size: 32px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
