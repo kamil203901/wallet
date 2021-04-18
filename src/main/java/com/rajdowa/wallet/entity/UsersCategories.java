@@ -16,4 +16,5 @@ public class UsersCategories {
     private String category3;
     private String category4;
     private String category5;
+    private String newCategory;
 }
